@@ -1,13 +1,11 @@
-package com.example.sburrestdemo.controller;
+package com.example.sburrestdemo.coffee.controller;
 
-import com.example.sburrestdemo.model.Coffee;
-import com.example.sburrestdemo.repository.CoffeeRepository;
+import com.example.sburrestdemo.coffee.model.Coffee;
+import com.example.sburrestdemo.coffee.repository.CoffeeRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -36,7 +34,7 @@ public class RestApiDemoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Coffee> puttCoffee(@PathVariable String id,
-                                      @RequestBody Coffee coffee) {
+                                             @RequestBody Coffee coffee) {
 
         return (coffeeRepository.existsById(id))
                 ? new ResponseEntity<>(coffeeRepository.save(coffee),

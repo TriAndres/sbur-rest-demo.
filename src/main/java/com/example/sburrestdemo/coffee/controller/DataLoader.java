@@ -1,10 +1,9 @@
-package com.example.sburrestdemo.controller;
+package com.example.sburrestdemo.coffee.controller;
 
-import com.example.sburrestdemo.model.Coffee;
-import com.example.sburrestdemo.repository.CoffeeRepository;
+import com.example.sburrestdemo.coffee.model.Coffee;
+import com.example.sburrestdemo.coffee.repository.CoffeeRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 

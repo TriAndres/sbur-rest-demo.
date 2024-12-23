@@ -1,13 +1,14 @@
-package com.example.sburrestdemo.model;
+package com.example.sburrestdemo.coffee.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 import java.util.UUID;
+
 @Entity
 public class Coffee {
     @Id
-    private  String id;
+    private String id;
     private String name;
 
     public Coffee() {
